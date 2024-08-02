@@ -1,0 +1,150 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #9f7147;
+    background-color: #fefdfc;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #fbc5a0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(159, 113, 71, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #3e6685;
+    margin-bottom: 2rem;
+}
+
+.question {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background-color: #fefdfc;
+    border-radius: 4px;
+}
+
+h3 {
+    margin-top: 0;
+    color: #ff7015;
+}
+
+label {
+    display: block;
+    margin: 0.5rem 0;
+    cursor: pointer;
+}
+
+input[type="radio"] {
+    margin-right: 0.5rem;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 0.8rem;
+    background-color: #ff7015;
+    color: #fefdfc;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #3e6685;
+}
+
+#result {
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: #fbc5a0;
+    border-radius: 4px;
+    text-align: center;
+}
+
+#result h2 {
+    color: #ff7015;
+}
+
+.hidden {
+    display: none;
+}
+
+#progress-container {
+    width: 100%;
+    background-color: #fefdfc;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+#progress-bar {
+    width: 0;
+    height: 20px;
+    background-color: #ff7015;
+    text-align: center;
+    line-height: 20px;
+    color: #fefdfc;
+    transition: width 0.5s ease-in-out;
+}
+
+#navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #3e6685;
+    color: #fefdfc;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ff7015;
+}
+
+button:disabled {
+    background-color: #fbc5a0;
+    cursor: not-allowed;
+}
+
+#prev-button {
+    margin-right: auto;
+}
+
+#next-button {
+    margin-left: auto;
+}
+
+.answered {
+    background-color: #4CAF50;
+    color: white;
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 95%;
+        padding: 1rem;
+    }
+    
+    #navigation {
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    #prev-button, #next-button {
+        margin: 0;
+    }
+}
