@@ -9,16 +9,14 @@
 <body>
     <div class="container">
         <h1>WaziUp IoT Proficiency Test</h1>
-        <div id="progress-container">
-            <div id="progress-bar">0%</div>
-        </div>
         <div id="quiz-container">
             <div id="questions-container"></div>
+            <div id="progress-bar" style="width: 0%; height: 20px; background-color: hwb(140 13% 27%);"></div>
             <div id="navigation">
-                <button id="prev-button">Previous</button>
-                <button id="next-button">Next</button>
+                <button id="prev-button" type="button">Previous</button>
+                <button id="next-button" type="button">Next</button>
             </div>
-            <button onclick="submitQuiz()" style="display: none;">Submit</button>
+            <button onclick="submitQuiz()" type="button" style="display: none;">Submit</button>
         </div>
         <div id="result" class="hidden">
             <h2>Your Score: <span id="score"></span></h2>
